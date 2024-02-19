@@ -1,0 +1,26 @@
+ALGORITHM algorithm_name
+VAR
+    str:="hello";
+    lenght:=0;
+    word_count:=0;
+    vowel_count:=0;
+    vowels = "aeiouAEIOU"
+BEGIN
+FOR i FROM 0 TO str.lenght STEP -1 DO
+lenght:=lenght +1;
+IF (str[i] = " ") THEN
+    word_count:=word_count+1
+END_IF
+IF ( vowels includes(str[i])) THEN
+    vowel_count:=vowel_count+1
+END_IF
+END_FOR 
+// Counting the length of the sentence 
+write ( lenght)
+// Counting the number of words in the sentence 
+write(word_count)
+// Counting the number of vowels in the sentence.
+write(vowel_count)
+END
+
+
